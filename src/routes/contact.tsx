@@ -105,7 +105,7 @@ function Contact() {
                   <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-muted-foreground">Message *</label>
                   <textarea required rows={5} value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} className="w-full rounded-xl border border-border bg-background px-3.5 py-3 text-sm focus:border-[color:var(--brand-purple)] focus:outline-none focus:ring-2 focus:ring-[color:var(--brand-purple)]/20" />
                 </div>
-                <button type="submit" className="inline-flex w-full items-center justify-center rounded-full bg-gradient-brand px-6 py-3.5 text-sm font-semibold text-white shadow-brand">Send message</button>
+                <button type="submit" disabled={sending} className="inline-flex w-full items-center justify-center rounded-full bg-gradient-brand px-6 py-3.5 text-sm font-semibold text-white shadow-brand disabled:opacity-60">{sending ? "Sending…" : "Send message"}</button>
               </form>
             )}
           </div>
