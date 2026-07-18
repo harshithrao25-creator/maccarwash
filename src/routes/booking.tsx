@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useServerFn } from "@tanstack/react-start";
 import { useState } from "react";
 import { CheckCircle2, Calendar, Car, User, MapPin, MessageSquare, Sparkles } from "lucide-react";
+import { submitBooking } from "@/lib/bookings.functions";
 
 type Search = { plan?: string };
 
@@ -19,7 +21,10 @@ export const Route = createFileRoute("/booking")({
 
 function Booking() {
   const { plan } = Route.useSearch();
+  const doSubmit = useServerFn(submitBooking);
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const [form, setForm] = useState({
     name: "",
     phone: "",
@@ -36,10 +41,32 @@ function Booking() {
   const update = <K extends keyof typeof form>(k: K, v: (typeof form)[K]) =>
     setForm((f) => ({ ...f, [k]: v }));
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    setError(null);
+    setSubmitting(true);
+    try {
+      await doSubmit({
+        data: {
+          name: form.name,
+          phone: form.phone,
+          email: form.email || undefined,
+          plan: form.plan,
+          car_model: form.carModel,
+          plate: form.plate || undefined,
+          booking_date: form.date,
+          booking_time: form.time,
+          address: form.address,
+          notes: form.notes || undefined,
+        },
+      });
+      setSubmitted(true);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Something went wrong. Please call us instead.");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   if (submitted) {
@@ -120,8 +147,9 @@ function Booking() {
               </div>
             </div>
 
-            <button type="submit" className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-brand px-6 py-4 text-sm font-semibold text-white shadow-brand transition hover:opacity-90">
-              Confirm booking
+            {error && <p className="mt-4 rounded-lg bg-red-50 p-3 text-sm text-red-800">{error}</p>}
+            <button type="submit" disabled={submitting} className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-brand px-6 py-4 text-sm font-semibold text-white shadow-brand transition hover:opacity-90 disabled:opacity-60">
+              {submitting ? "Sending…" : "Confirm booking"}
             </button>
             <p className="mt-3 text-center text-xs text-muted-foreground">By booking you agree to be contacted by our team to confirm.</p>
           </form>

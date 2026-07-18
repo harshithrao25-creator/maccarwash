@@ -193,7 +193,7 @@ function Footer() {
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 py-6 text-xs text-white/60 sm:flex-row lg:px-8">
           <p>© {new Date().getFullYear()} MAC Mobile Car Wash. All rights reserved.</p>
-          <p>Naif, Dubai, United Arab Emirates</p>
+          <p>Naif, Dubai, United Arab Emirates · <Link to="/auth" className="hover:text-white">Admin</Link></p>
         </div>
       </div>
     </footer>
