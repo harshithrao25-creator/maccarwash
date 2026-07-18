@@ -147,8 +147,9 @@ function Booking() {
               </div>
             </div>
 
-            <button type="submit" className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-brand px-6 py-4 text-sm font-semibold text-white shadow-brand transition hover:opacity-90">
-              Confirm booking
+            {error && <p className="mt-4 rounded-lg bg-red-50 p-3 text-sm text-red-800">{error}</p>}
+            <button type="submit" disabled={submitting} className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-brand px-6 py-4 text-sm font-semibold text-white shadow-brand transition hover:opacity-90 disabled:opacity-60">
+              {submitting ? "Sending…" : "Confirm booking"}
             </button>
             <p className="mt-3 text-center text-xs text-muted-foreground">By booking you agree to be contacted by our team to confirm.</p>
           </form>
