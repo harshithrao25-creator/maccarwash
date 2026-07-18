@@ -1,8 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useServerFn } from "@tanstack/react-start";
 import { useState } from "react";
 import { Phone, Mail, MapPin, Facebook, CheckCircle2 } from "lucide-react";
-import { submitContact } from "@/lib/bookings.functions";
 
 export const Route = createFileRoute("/contact")({
   component: Contact,
@@ -15,25 +13,8 @@ export const Route = createFileRoute("/contact")({
 });
 
 function Contact() {
-  const doSubmit = useServerFn(submitContact);
   const [sent, setSent] = useState(false);
-  const [sending, setSending] = useState(false);
-  const [error, setError] = useState<string | null>(null);
   const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
-
-  const onSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setError(null);
-    setSending(true);
-    try {
-      await doSubmit({ data: { name: form.name, phone: form.phone, email: form.email || undefined, message: form.message } });
-      setSent(true);
-    } catch (err) {
-      setError(err instanceof Error ? err.message : "Something went wrong");
-    } finally {
-      setSending(false);
-    }
-  };
 
   return (
     <>
@@ -84,8 +65,10 @@ function Contact() {
                 <button onClick={() => { setSent(false); setForm({ name: "", email: "", phone: "", message: "" }); }} className="mt-6 rounded-full border border-border px-5 py-2.5 text-sm font-semibold">Send another</button>
               </div>
             ) : (
-              <form onSubmit={onSubmit} className="space-y-5">
-                {error && <p className="rounded-lg bg-red-50 p-3 text-sm text-red-800">{error}</p>}
+              <form
+                onSubmit={(e) => { e.preventDefault(); setSent(true); }}
+                className="space-y-5"
+              >
                 <h2 className="font-display text-2xl font-bold">Send us a message</h2>
                 <div className="grid gap-5 sm:grid-cols-2">
                   <div>
@@ -105,7 +88,7 @@ function Contact() {
                   <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-muted-foreground">Message *</label>
                   <textarea required rows={5} value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} className="w-full rounded-xl border border-border bg-background px-3.5 py-3 text-sm focus:border-[color:var(--brand-purple)] focus:outline-none focus:ring-2 focus:ring-[color:var(--brand-purple)]/20" />
                 </div>
-                <button type="submit" disabled={sending} className="inline-flex w-full items-center justify-center rounded-full bg-gradient-brand px-6 py-3.5 text-sm font-semibold text-white shadow-brand disabled:opacity-60">{sending ? "Sending…" : "Send message"}</button>
+                <button type="submit" className="inline-flex w-full items-center justify-center rounded-full bg-gradient-brand px-6 py-3.5 text-sm font-semibold text-white shadow-brand">Send message</button>
               </form>
             )}
           </div>

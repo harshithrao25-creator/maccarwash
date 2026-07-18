@@ -72,21 +72,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "MAC Mobile Car Wash — Premium Mobile Car Wash in Dubai" },
-      { name: "description", content: "Professional mobile car washing, detailing & cleaning at your doorstep across Dubai and the UAE. Silver AED 80, Gold AED 120. Book online today." },
+      { title: "MAC Mobile Car Wash — Premium Mobile Car Wash & Detailing in Dubai, UAE" },
+      { name: "description", content: "MAC Mobile Car Wash offers professional mobile car washing, detailing and cleaning at your doorstep in Dubai and UAE. Book online today." },
       { name: "author", content: "MAC Mobile Car Wash" },
-      { property: "og:title", content: "MAC Mobile Car Wash — Premium Mobile Car Wash in Dubai" },
-      { property: "og:description", content: "Professional mobile car washing, detailing & cleaning at your doorstep across Dubai and the UAE. Silver AED 80, Gold AED 120. Book online today." },
+      { property: "og:title", content: "MAC Mobile Car Wash — Dubai's Premium Mobile Car Wash" },
+      { property: "og:description", content: "Eco-friendly mobile car washing & detailing at your doorstep across the UAE. Silver AED 80, Gold AED 120. Book online." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "MAC Mobile Car Wash — Premium Mobile Car Wash in Dubai" },
-      { name: "twitter:description", content: "Professional mobile car washing, detailing & cleaning at your doorstep across Dubai and the UAE. Silver AED 80, Gold AED 120. Book online today." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/89633a01-d3ac-4a01-b914-10734711a753/id-preview-7ef34301--a74b8abf-cfb1-435a-aa91-504cc1f1298c.lovable.app-1784371291196.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/89633a01-d3ac-4a01-b914-10734711a753/id-preview-7ef34301--a74b8abf-cfb1-435a-aa91-504cc1f1298c.lovable.app-1784371291196.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "icon", type: "image/png", href: "/__l5e/assets-v1/f22d7959-2252-407d-8744-258c45f8488d/mac-logo.png" },
+      { rel: "icon", type: "image/png", href: logoAsset.url },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" },
@@ -197,7 +193,7 @@ function Footer() {
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 py-6 text-xs text-white/60 sm:flex-row lg:px-8">
           <p>© {new Date().getFullYear()} MAC Mobile Car Wash. All rights reserved.</p>
-          <p>Naif, Dubai, United Arab Emirates · <Link to="/auth" className="hover:text-white">Admin</Link></p>
+          <p>Naif, Dubai, United Arab Emirates</p>
         </div>
       </div>
     </footer>
