@@ -12,7 +12,7 @@ import { Menu, X, Phone } from "lucide-react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
-import logoAsset from "../assets/mac-logo.png.asset.json";
+import logo from "../assets/mac-logo.png";
 
 const NAV = [
   { to: "/", label: "Home" },
@@ -82,7 +82,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "icon", type: "image/png", href: logoAsset.url },
+     { rel: "icon", type: "image/png", href: logo },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" },
@@ -112,7 +112,7 @@ function Header() {
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-xl">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link to="/" className="flex items-center gap-3">
-          <img src={logoAsset.url} alt="MAC Mobile Car Wash logo" className="h-12 w-auto" />
+          <img src={logo} alt="MAC Mobile Car Wash logo" className="h-12 w-auto" />
           <span className="hidden font-display text-lg font-bold leading-tight sm:block">
             MAC <span className="text-gradient-brand">Mobile Car Wash</span>
           </span>
@@ -160,7 +160,7 @@ function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:grid-cols-2 lg:grid-cols-4 lg:px-8">
         <div>
           <div className="flex items-center gap-3">
-            <img src={logoAsset.url} alt="MAC" className="h-12 w-auto" />
+            <img src={logo} alt="MAC" className="h-12 w-auto" />
             <span className="font-display text-lg font-bold text-white">MAC</span>
           </div>
           <p className="mt-4 text-sm leading-relaxed">
