@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import { Phone, Mail, MapPin, Facebook, CheckCircle2 } from "lucide-react";
 
 export const Route = createFileRoute("/contact")({
@@ -71,7 +72,28 @@ function Contact() {
               </div>
             ) : (
               <form
-                onSubmit={(e) => { e.preventDefault(); setSent(true); }}
+                onSubmit={async (e) => {
+  e.preventDefault();
+
+  try {
+    await emailjs.send(
+      "service_yxhn84v",
+      "template_ftzvv4c",
+      {
+        name: form.name,
+        email: form.email,
+        phone: form.phone,
+        message: form.message,
+      },
+      "T70QjAsQzkUpkhp9i"
+    );
+
+    setSent(true);
+  } catch (error) {
+    console.error(error);
+    alert("Failed to send message.");
+  }
+}}
                 className="space-y-5"
               >
                 <h2 className="font-display text-2xl font-bold">Send us a message</h2>

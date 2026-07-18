@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import { CheckCircle2, Calendar, Car, User, MapPin, MessageSquare, Sparkles } from "lucide-react";
 
@@ -36,11 +37,39 @@ function Booking() {
   const update = <K extends keyof typeof form>(k: K, v: (typeof form)[K]) =>
     setForm((f) => ({ ...f, [k]: v }));
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+   const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  try {
+    await emailjs.send(
+      "service_yxhn84v",
+      "template_1gucazw",
+      {
+        name: form.name,
+        phone: form.phone,
+        email: form.email,
+        plan: form.plan,
+        carModel: form.carModel,
+        plate: form.plate,
+        date: form.date,
+        time: form.time,
+        address: form.address,
+        notes: form.notes,
+      },
+      "T70QjAsQzkUpkhp9i"
+    );
+
     setSubmitted(true);
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  } catch (error) {
+    console.error(error);
+    alert("Booking failed. Please try again.");
+  }
+};
 
   if (submitted) {
     return (
@@ -139,7 +168,7 @@ function Booking() {
               <p className="mt-2 text-sm text-white/85">Call or WhatsApp us — we're happy to help you choose the right plan.</p>
               <a href="https://wa.me/971586029939?text=Hi%20MAC%20Mobile%20Car%20Wash!%20I%20would%20like%20to%20book%20a%20car%20wash."
 target="_blank"
-rel="noopener noreferrer" className="mt-4 inline-flex w-full items-center justify-center rounded-full bg-white px-4 py-3 text-sm font-semibold text-[color:var(--brand-purple)]">+971 504 053 275</a>
+rel="noopener noreferrer" className="mt-4 inline-flex w-full items-center justify-center rounded-full bg-white px-4 py-3 text-sm font-semibold text-[color:var(--brand-purple)]">+971 58 602 9939</a>
             </div>
             <div className="rounded-3xl border border-border bg-card p-6 shadow-card">
               <h4 className="font-display font-bold">What's included</h4>
