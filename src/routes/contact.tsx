@@ -84,11 +84,8 @@ function Contact() {
                 <button onClick={() => { setSent(false); setForm({ name: "", email: "", phone: "", message: "" }); }} className="mt-6 rounded-full border border-border px-5 py-2.5 text-sm font-semibold">Send another</button>
               </div>
             ) : (
-              <form
               <form onSubmit={onSubmit} className="space-y-5">
                 {error && <p className="rounded-lg bg-red-50 p-3 text-sm text-red-800">{error}</p>}
-                className="space-y-5"
-              >
                 <h2 className="font-display text-2xl font-bold">Send us a message</h2>
                 <div className="grid gap-5 sm:grid-cols-2">
                   <div>
