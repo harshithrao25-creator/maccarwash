@@ -32,7 +32,12 @@ function Contact() {
         <div className="grid gap-10 lg:grid-cols-[1fr_1.2fr]">
           <div className="space-y-4">
             {[
-              { icon: Phone, title: "Phone", value: "+971 504 053 275", href: "tel:+971504053275" },
+              {
+  icon: Phone,
+  title: "WhatsApp",
+  value: "+971 58 602 9939",
+  href: "https://wa.me/971586029939?text=Hi%20MAC%20Mobile%20Car%20Wash!%20I%20would%20like%20to%20book%20a%20car%20wash."
+},
               { icon: Phone, title: "Landline", value: "04 2353 578", href: "tel:+97142353578" },
               { icon: Mail, title: "Email", value: "mac@macwaterlesscarwash.com", href: "mailto:mac@macwaterlesscarwash.com" },
               { icon: MapPin, title: "Address", value: "Naif, Dubai, United Arab Emirates" },

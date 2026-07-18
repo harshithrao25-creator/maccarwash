@@ -128,7 +128,9 @@ function Header() {
               {n.label}
             </Link>
           ))}
-          <a href="tel:+971504053275" className="ml-3 inline-flex items-center gap-2 rounded-full bg-gradient-brand px-5 py-2.5 text-sm font-semibold text-white shadow-brand transition hover:opacity-90">
+          <a href="https://wa.me/971586029939?text=Hi%20MAC%20Mobile%20Car%20Wash!%20I%20would%20like%20to%20book%20a%20car%20wash."
+target="_blank"
+rel="noopener noreferrer" className="ml-3 inline-flex items-center gap-2 rounded-full bg-gradient-brand px-5 py-2.5 text-sm font-semibold text-white shadow-brand transition hover:opacity-90">
             <Phone className="h-4 w-4" /> +971 504 053 275
           </a>
         </nav>
@@ -144,7 +146,9 @@ function Header() {
                 {n.label}
               </Link>
             ))}
-            <a href="tel:+971504053275" className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-gradient-brand px-5 py-3 text-sm font-semibold text-white">
+            <a href="https://wa.me/971586029939?text=Hi%20MAC%20Mobile%20Car%20Wash!%20I%20would%20like%20to%20book%20a%20car%20wash."
+target="_blank"
+rel="noopener noreferrer" className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-gradient-brand px-5 py-3 text-sm font-semibold text-white">
               <Phone className="h-4 w-4" /> Call +971 504 053 275
             </a>
           </div>
@@ -178,7 +182,16 @@ function Footer() {
         <div>
           <h4 className="font-display text-sm font-semibold uppercase tracking-wider text-white">Contact</h4>
           <ul className="mt-4 space-y-2 text-sm">
-            <li><a href="tel:+971504053275" className="hover:text-[color:var(--brand-lime)]">+971 504 053 275</a></li>
+            <li>
+  <a
+    href="https://wa.me/971586029939?text=Hi%20MAC%20Mobile%20Car%20Wash!%20I%20would%20like%20to%20book%20a%20car%20wash."
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-[color:var(--brand-lime)]"
+  >
+    +971 58 602 9939
+  </a>
+</li>
             <li><a href="tel:+97142353578" className="hover:text-[color:var(--brand-lime)]">04 2353 578</a></li>
             <li><a href="mailto:mac@macwaterlesscarwash.com" className="hover:text-[color:var(--brand-lime)] break-all">mac@macwaterlesscarwash.com</a></li>
             <li>Naif, Dubai, UAE</li>

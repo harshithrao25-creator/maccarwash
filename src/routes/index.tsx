@@ -109,7 +109,12 @@ function Home() {
                 View Packages <ArrowRight className="h-4 w-4" />
               </Link>
               <div className="mt-8 border-t border-border pt-6">
-                <a href="tel:+971504053275" className="flex items-center gap-3 text-sm">
+                <a
+  href="https://wa.me/971586029939?text=Hi%20MAC%20Mobile%20Car%20Wash!%20I%20would%20like%20to%20book%20a%20car%20wash."
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-3 text-sm"
+>
                   <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[color:var(--brand-lime)]/20 text-[color:var(--brand-purple)]">
                     <Phone className="h-4 w-4" />
                   </span>
@@ -153,7 +158,9 @@ function Home() {
               <Link to="/booking" className="inline-flex items-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-[color:var(--brand-purple)] transition hover:bg-white/90">
                 Book Now <ArrowRight className="h-4 w-4" />
               </Link>
-              <a href="tel:+971504053275" className="inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/10 px-7 py-3.5 text-sm font-semibold text-white backdrop-blur transition hover:bg-white/20">
+              <a href="https://wa.me/971586029939?text=Hi%20MAC%20Mobile%20Car%20Wash!%20I%20would%20like%20to%20book%20a%20car%20wash."
+target="_blank"
+rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/10 px-7 py-3.5 text-sm font-semibold text-white backdrop-blur transition hover:bg-white/20">
                 <Phone className="h-4 w-4" /> Call now
               </a>
             </div>

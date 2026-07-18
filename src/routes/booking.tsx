@@ -56,7 +56,14 @@ function Booking() {
           <span className="font-semibold text-foreground">{form.phone}</span> to confirm.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-3">
-          <a href="tel:+971504053275" className="inline-flex rounded-full bg-gradient-brand px-6 py-3 text-sm font-semibold text-white shadow-brand">Call us: +971 504 053 275</a>
+          <a
+  href="https://wa.me/971586029939?text=Hi%20MAC%20Mobile%20Car%20Wash!%20I%20would%20like%20to%20book%20a%20car%20wash."
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex rounded-full ..."
+>
+  WhatsApp us: +971 58 602 9939
+</a>
           <button onClick={() => setSubmitted(false)} className="rounded-full border border-border px-6 py-3 text-sm font-semibold">New booking</button>
         </div>
       </section>
@@ -130,7 +137,9 @@ function Booking() {
             <div className="rounded-3xl bg-gradient-brand p-6 text-white shadow-brand">
               <h3 className="font-display text-xl font-bold">Need help?</h3>
               <p className="mt-2 text-sm text-white/85">Call or WhatsApp us — we're happy to help you choose the right plan.</p>
-              <a href="tel:+971504053275" className="mt-4 inline-flex w-full items-center justify-center rounded-full bg-white px-4 py-3 text-sm font-semibold text-[color:var(--brand-purple)]">+971 504 053 275</a>
+              <a href="https://wa.me/971586029939?text=Hi%20MAC%20Mobile%20Car%20Wash!%20I%20would%20like%20to%20book%20a%20car%20wash."
+target="_blank"
+rel="noopener noreferrer" className="mt-4 inline-flex w-full items-center justify-center rounded-full bg-white px-4 py-3 text-sm font-semibold text-[color:var(--brand-purple)]">+971 504 053 275</a>
             </div>
             <div className="rounded-3xl border border-border bg-card p-6 shadow-card">
               <h4 className="font-display font-bold">What's included</h4>
