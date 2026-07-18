@@ -131,7 +131,7 @@ function Header() {
           <a href="https://wa.me/971586029939?text=Hi%20MAC%20Mobile%20Car%20Wash!%20I%20would%20like%20to%20book%20a%20car%20wash."
 target="_blank"
 rel="noopener noreferrer" className="ml-3 inline-flex items-center gap-2 rounded-full bg-gradient-brand px-5 py-2.5 text-sm font-semibold text-white shadow-brand transition hover:opacity-90">
-            <Phone className="h-4 w-4" /> +971 504 053 275
+            <Phone className="h-4 w-4" /> +971 58 602 9939
           </a>
         </nav>
         <button className="md:hidden" onClick={() => setOpen(!open)} aria-label="Menu">
@@ -149,7 +149,7 @@ rel="noopener noreferrer" className="ml-3 inline-flex items-center gap-2 rounded
             <a href="https://wa.me/971586029939?text=Hi%20MAC%20Mobile%20Car%20Wash!%20I%20would%20like%20to%20book%20a%20car%20wash."
 target="_blank"
 rel="noopener noreferrer" className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-gradient-brand px-5 py-3 text-sm font-semibold text-white">
-              <Phone className="h-4 w-4" /> Call +971 504 053 275
+              <Phone className="h-4 w-4" /> Call +971 58 602 9939
             </a>
           </div>
         </div>

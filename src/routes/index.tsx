@@ -118,7 +118,8 @@ function Home() {
                   <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[color:var(--brand-lime)]/20 text-[color:var(--brand-purple)]">
                     <Phone className="h-4 w-4" />
                   </span>
-                  <span><span className="block text-xs text-muted-foreground">Call us anytime</span><span className="font-semibold">+971 504 053 275</span></span>
+                  <span className="block text-xs text-muted-foreground">WhatsApp us anytime</span>
+<span className="font-semibold">+971 58 602 9939</span>
                 </a>
               </div>
             </div>
