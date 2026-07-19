@@ -5,8 +5,12 @@ export const Route = createFileRoute("/about")({
   component: About,
   head: () => ({
     meta: [
-      { title: "About Us — MAC Mobile Car Wash Dubai" },
-      { name: "description", content: "Learn about MAC Mobile Car Wash — 10+ years serving Dubai with professional, eco-friendly mobile car washing and detailing at your doorstep." },
+      {   title:     "About MAC Mobile Car Wash | Professional Mobile Car Wash & Car Detailing UAE", },
+      {
+  name: "description",
+  content:
+    "Learn about MAC Mobile Car Wash Services, providing professional mobile car wash, car detailing and eco-friendly vehicle cleaning for homes, apartments, villas, offices, hotels and commercial fleets across the UAE.",
+},
       { property: "og:title", content: "About MAC Mobile Car Wash" },
       { property: "og:description", content: "10+ years of professional mobile car washing and detailing in Dubai, UAE." },
     ],
@@ -26,9 +30,9 @@ function About() {
       <section className="bg-gradient-hero py-20 text-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <span className="text-xs font-semibold uppercase tracking-widest text-[color:var(--brand-lime)]">About MAC</span>
-          <h1 className="mt-3 max-w-3xl font-display text-5xl font-extrabold leading-tight sm:text-6xl">Best car washing & cleaning in Dubai</h1>
+          <h1 className="mt-3 max-w-3xl font-display text-5xl font-extrabold leading-tight sm:text-6xl">Professional Mobile Car Wash & Car Detailing Services</h1>
           <p className="mt-6 max-w-2xl text-lg text-white/80">
-            A professional mobile car wash company serving corporates, villas, communities, residential towers, hotels and multiplex parking across the UAE.
+            MAC Mobile Car Wash Services provides professional mobile car washing and detailing for homes, apartments, villas, offices, residential communities, hotels and commercial fleets across the United Arab Emirates.
           </p>
         </div>
       </section>
@@ -36,15 +40,15 @@ function About() {
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-2">
           <div>
-            <h2 className="font-display text-4xl font-bold">10+ years of quality mobile car washing</h2>
+            <h2 className="font-display text-4xl font-bold">Over 10 Years of Professional Mobile Car Wash Experience</h2>
             <p className="mt-6 text-muted-foreground">
-              MAC Mobile Car Wash is a professional mobile car wash company in Dubai providing car cleaning & detailing service to the corporate, villas and communities, residential towers, hotels and multiplex parking in UAE.
+              MAC Mobile Car Wash Services has over 10 years of experience providing professional mobile car washing and car detailing across the UAE. We proudly serve homes, apartments, villas, offices, residential communities, hotels and commercial fleet operators with reliable, eco-friendly vehicle cleaning services.
             </p>
             <p className="mt-4 text-muted-foreground">
-              Our services are designed to suit everyone's needs — we do car wash at your home. Our experienced and fully insured professional staff has managed to create a thriving business with an impeccable reputation.
+              Our goal is to make professional car care simple and convenient. Our trained and fully insured team comes directly to your location, delivering high-quality car washing and detailing while saving you valuable time.
             </p>
             <p className="mt-4 text-muted-foreground">
-              We bring you the most advanced spray-and-wipe car cleaning technology using the industry's finest products, giving your car a spotless glow and shine.
+              Using premium cleaning products and modern mobile car wash techniques, we safely remove dirt, dust and road grime while protecting your vehicle's finish and delivering a long-lasting shine.
             </p>
             <div className="mt-8 grid gap-3 sm:grid-cols-2">
               {["Corporate contracts", "Villa & community service", "Residential towers", "Hotel parking", "Multiplex parking", "One-time washes"].map((s) => (
@@ -89,6 +93,42 @@ function About() {
           </div>
         </div>
       </section>
+      {/* NEW SECTION START */}
+      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+        <h2 className="font-display text-4xl font-bold">
+          Professional Mobile Car Wash Services Across the UAE
+        </h2>
+
+        <p className="mt-6 text-muted-foreground">
+          MAC Mobile Car Wash Services provides professional mobile car washing,
+          car detailing and vehicle cleaning for homes, apartments, villas,
+          offices, hotels, residential communities and commercial fleets across
+          the United Arab Emirates.
+        </p>
+
+        <p className="mt-4 text-muted-foreground">
+          We are committed to delivering reliable service, premium quality and
+          eco-friendly cleaning solutions while making car care easier and more
+          convenient for every customer.
+        </p>
+
+        <div className="mt-8 flex flex-wrap gap-4">
+          <Link
+            to="/packages"
+            className="rounded-full bg-gradient-brand px-6 py-3 text-white font-semibold"
+          >
+            View Packages
+          </Link>
+
+          <Link
+            to="/booking"
+            className="rounded-full border px-6 py-3 font-semibold"
+          >
+            Book Now
+          </Link>
+        </div>
+      </section>
+      {/* NEW SECTION END */}
     </>
   );
 }
