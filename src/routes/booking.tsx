@@ -12,8 +12,12 @@ export const Route = createFileRoute("/booking")({
   }),
   head: () => ({
     meta: [
-      { title: "Book Online — MAC Mobile Car Wash Dubai" },
-      { name: "description", content: "Book your mobile car wash online. Silver AED 80, Gold AED 120. We come to your home, office or community across Dubai and UAE." },
+      {   title:     "Book Mobile Car Wash Online | Professional Car Detailing UAE", },
+      {
+  name: "description",
+  content:
+    "Book your professional mobile car wash online. Choose your preferred package, date and time, and our team will come directly to your location anywhere across the UAE.",
+},
     ],
   }),
 });
@@ -104,15 +108,15 @@ function Booking() {
       <section className="bg-gradient-hero py-16 text-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <span className="text-xs font-semibold uppercase tracking-widest text-[color:var(--brand-lime)]">Book Online</span>
-          <h1 className="mt-3 font-display text-5xl font-extrabold sm:text-6xl">Book a mobile car wash</h1>
-          <p className="mt-4 max-w-2xl text-lg text-white/80">Fill in a few details — we'll come to you.</p>
+          <h1 className="mt-3 font-display text-5xl font-extrabold sm:text-6xl">Book Your Mobile Car Wash</h1>
+          <p className="mt-4 max-w-2xl text-lg text-white/80">Complete the booking form below and our team will contact you to confirm your appointment. Professional mobile car washing delivered directly to your location.</p>
         </div>
       </section>
 
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-[1fr_360px]">
           <form onSubmit={handleSubmit} className="rounded-3xl border border-border bg-card p-8 shadow-card">
-            <h2 className="font-display text-2xl font-bold">Your details</h2>
+            <h2 className="font-display text-2xl font-bold">Booking Information</h2>
 
             <div className="mt-6 grid gap-5 sm:grid-cols-2">
               <Field icon={User} label="Full name" required>
@@ -157,32 +161,78 @@ function Booking() {
             </div>
 
             <button type="submit" className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-brand px-6 py-4 text-sm font-semibold text-white shadow-brand transition hover:opacity-90">
-              Confirm booking
+              Book Now
             </button>
             <p className="mt-3 text-center text-xs text-muted-foreground">By booking you agree to be contacted by our team to confirm.</p>
           </form>
 
           <aside className="space-y-4">
             <div className="rounded-3xl bg-gradient-brand p-6 text-white shadow-brand">
-              <h3 className="font-display text-xl font-bold">Need help?</h3>
+              <h3 className="font-display text-xl font-bold">Need Assistance?</h3>
               <p className="mt-2 text-sm text-white/85">Call or WhatsApp us — we're happy to help you choose the right plan.</p>
               <a href="https://wa.me/971586029939?text=Hi%20MAC%20Mobile%20Car%20Wash!%20I%20would%20like%20to%20book%20a%20car%20wash."
 target="_blank"
 rel="noopener noreferrer" className="mt-4 inline-flex w-full items-center justify-center rounded-full bg-white px-4 py-3 text-sm font-semibold text-[color:var(--brand-purple)]">+971 58 602 9939</a>
             </div>
             <div className="rounded-3xl border border-border bg-card p-6 shadow-card">
-              <h4 className="font-display font-bold">What's included</h4>
+              <h4 className="font-display font-bold">Why Book With MAC?</h4>
               <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
-                <li>• Certified, insured professionals</li>
-                <li>• Eco-friendly, premium products</li>
-                <li>• We bring water and equipment</li>
+                <li>• Professional trained staff</li>
+                <li>• Premium cleaning products</li>
+                <li>• Convenient doorstep service</li>
                 <li>• Service at your home or office</li>
               </ul>
             </div>
           </aside>
         </div>
       </section>
+<section className="bg-muted/40 py-20">
+  <div className="mx-auto max-w-6xl px-4">
 
+    <h2 className="font-display text-4xl font-bold text-center">
+      Why Book With MAC Mobile Car Wash?
+    </h2>
+
+    <p className="mx-auto mt-6 max-w-3xl text-center text-muted-foreground">
+      Booking your mobile car wash online is quick, simple and convenient. Our experienced team delivers professional vehicle cleaning directly to your location, saving you time while providing exceptional service and premium results.
+    </p>
+
+    <div className="mt-12 grid gap-6 md:grid-cols-3">
+
+      <div className="rounded-2xl border p-6">
+        <h3 className="text-xl font-semibold">
+          Easy Online Booking
+        </h3>
+
+        <p className="mt-3 text-muted-foreground">
+          Complete your booking in just a few minutes.
+        </p>
+      </div>
+
+      <div className="rounded-2xl border p-6">
+        <h3 className="text-xl font-semibold">
+          Flexible Scheduling
+        </h3>
+
+        <p className="mt-3 text-muted-foreground">
+          Choose the date and time that works best for you.
+        </p>
+      </div>
+
+      <div className="rounded-2xl border p-6">
+        <h3 className="text-xl font-semibold">
+          Professional Service
+        </h3>
+
+        <p className="mt-3 text-muted-foreground">
+          Experienced professionals using premium products and modern equipment.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
       <style>{`
         .input {
           width: 100%;
