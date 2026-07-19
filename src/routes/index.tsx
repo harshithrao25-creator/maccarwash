@@ -6,8 +6,8 @@ export const Route = createFileRoute("/")({
   component: Home,
   head: () => ({
     meta: [
-      { title: "MAC Mobile Car Wash — Premium Mobile Car Wash in Dubai" },
-      { name: "description", content: "Professional mobile car washing, detailing & cleaning at your doorstep across Dubai and the UAE. Silver AED 80, Gold AED 120. Book online today." },
+      { title: "Mobile Car Wash Dubai | Car Detailing & Car Cleaning | MAC Mobile Car Wash" },
+      { name: "description", content: "Professional mobile car wash and car detailing services in Dubai. Interior and exterior car cleaning for homes, offices, villas and businesses. Book online with MAC Mobile Car Wash." },
     ],
   }),
 });
@@ -31,7 +31,7 @@ function Home() {
       {/* HERO */}
       <section className="relative overflow-hidden bg-gradient-hero">
         <div className="absolute inset-0 opacity-40">
-          <img src={heroImg} alt="Luxury car being washed" className="h-full w-full object-cover" width={1600} height={1000} />
+          <img src={heroImg} alt="Professional mobile car wash service in Dubai" className="h-full w-full object-cover" width={1600} height={1000} />
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-[color:var(--brand-ink)]/95 via-[color:var(--brand-ink)]/70 to-transparent" />
         <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-24 sm:px-6 lg:grid-cols-2 lg:px-8 lg:py-32">
