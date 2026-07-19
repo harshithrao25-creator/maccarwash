@@ -7,8 +7,12 @@ export const Route = createFileRoute("/contact")({
   component: Contact,
   head: () => ({
     meta: [
-      { title: "Contact — MAC Mobile Car Wash Dubai" },
-      { name: "description", content: "Contact MAC Mobile Car Wash in Dubai. Call +971 504 053 275, email mac@macwaterlesscarwash.com, or send us a message online." },
+      {   title:     "Contact MAC Mobile Car Wash | Mobile Car Wash & Car Detailing UAE", },
+      {
+  name: "description",
+  content:
+    "Contact MAC Mobile Car Wash Services for professional mobile car washing, detailing and fleet cleaning across the UAE. Call, WhatsApp or Send us a message online.",
+},
     ],
   }),
 });
@@ -22,9 +26,9 @@ function Contact() {
       <section className="bg-gradient-hero py-20 text-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <span className="text-xs font-semibold uppercase tracking-widest text-[color:var(--brand-lime)]">Contact Us</span>
-          <h1 className="mt-3 font-display text-5xl font-extrabold sm:text-6xl">We'd love to hear from you</h1>
+          <h1 className="mt-3 font-display text-5xl font-extrabold sm:text-6xl">Contact MAC Mobile Car Wash</h1>
           <p className="mt-4 max-w-2xl text-lg text-white/80">
-            Questions about packages, corporate contracts or a specific service? Reach out — we typically reply the same day.
+            Have questions about our mobile car wash services, pricing or commercial contracts? Contact our team by phone, WhatsApp, email or by completing the contact form below.
           </p>
         </div>
       </section>
@@ -96,7 +100,7 @@ function Contact() {
 }}
                 className="space-y-5"
               >
-                <h2 className="font-display text-2xl font-bold">Send us a message</h2>
+                <h2 className="font-display text-2xl font-bold">Get in Touch</h2>
                 <div className="grid gap-5 sm:grid-cols-2">
                   <div>
                     <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-muted-foreground">Name *</label>
@@ -115,12 +119,59 @@ function Contact() {
                   <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-muted-foreground">Message *</label>
                   <textarea required rows={5} value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} className="w-full rounded-xl border border-border bg-background px-3.5 py-3 text-sm focus:border-[color:var(--brand-purple)] focus:outline-none focus:ring-2 focus:ring-[color:var(--brand-purple)]/20" />
                 </div>
-                <button type="submit" className="inline-flex w-full items-center justify-center rounded-full bg-gradient-brand px-6 py-3.5 text-sm font-semibold text-white shadow-brand">Send message</button>
+                <button type="submit" className="inline-flex w-full items-center justify-center rounded-full bg-gradient-brand px-6 py-3.5 text-sm font-semibold text-white shadow-brand">Send Message</button>
               </form>
             )}
           </div>
         </div>
       </section>
+      <section className="bg-muted/40 py-20">
+  <div className="mx-auto max-w-6xl px-4">
+
+    <h2 className="font-display text-4xl font-bold text-center">
+      Why Contact MAC Mobile Car Wash?
+    </h2>
+
+    <p className="mx-auto mt-6 max-w-3xl text-center text-muted-foreground">
+      Whether you're looking for a one-time car wash, a regular maintenance plan or a commercial fleet solution, our team is ready to help. We respond quickly and work with both individual customers and businesses across the UAE.
+    </p>
+
+    <div className="mt-12 grid gap-6 md:grid-cols-3">
+
+      <div className="rounded-2xl border p-6">
+        <h3 className="text-xl font-semibold">
+          Fast Response
+        </h3>
+
+        <p className="mt-3 text-muted-foreground">
+          We aim to respond to enquiries as quickly as possible.
+        </p>
+      </div>
+
+      <div className="rounded-2xl border p-6">
+        <h3 className="text-xl font-semibold">
+          Flexible Booking
+        </h3>
+
+        <p className="mt-3 text-muted-foreground">
+          Choose a date and time that works best for your schedule.
+        </p>
+      </div>
+
+      <div className="rounded-2xl border p-6">
+        <h3 className="text-xl font-semibold">
+          Professional Support
+        </h3>
+
+        <p className="mt-3 text-muted-foreground">
+          Our experienced team is available to answer your questions and recommend the right service.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
     </>
   );
 }
