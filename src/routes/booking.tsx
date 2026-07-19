@@ -169,7 +169,7 @@ function Booking() {
           <aside className="space-y-4">
             <div className="rounded-3xl bg-gradient-brand p-6 text-white shadow-brand">
               <h3 className="font-display text-xl font-bold">Need Assistance?</h3>
-              <p className="mt-2 text-sm text-white/85">Call or WhatsApp us — we're happy to help you choose the right plan.</p>
+              <p className="mt-2 text-sm text-white/85">Our friendly team is ready to help you choose the right package, answer your questions and confirm your booking.</p>
               <a href="https://wa.me/971586029939?text=Hi%20MAC%20Mobile%20Car%20Wash!%20I%20would%20like%20to%20book%20a%20car%20wash."
 target="_blank"
 rel="noopener noreferrer" className="mt-4 inline-flex w-full items-center justify-center rounded-full bg-white px-4 py-3 text-sm font-semibold text-[color:var(--brand-purple)]">+971 58 602 9939</a>
