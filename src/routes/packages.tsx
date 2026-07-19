@@ -5,8 +5,12 @@ export const Route = createFileRoute("/packages")({
   component: Packages,
   head: () => ({
     meta: [
-      { title: "Packages & Pricing — MAC Mobile Car Wash Dubai" },
-      { name: "description", content: "Silver AED 80 and Gold AED 120 mobile car wash packages in Dubai. Includes exterior & interior cleaning, pressure wash, vacuuming and more." },
+      {   title:     "Mobile Car Wash Packages & Pricing | Car Detailing Services UAE", },
+      {
+  name: "description",
+  content:
+    "Explore our professional mobile car wash and car detailing packages. Choose from Silver and Gold plans with premium vehicle cleaning services across the UAE.",
+},
       { property: "og:title", content: "MAC Mobile Car Wash — Pricing" },
       { property: "og:description", content: "Silver AED 80 · Gold AED 120. Professional mobile car wash packages in Dubai, UAE." },
     ],
@@ -58,8 +62,8 @@ function Packages() {
       <section className="bg-gradient-hero py-20 text-white">
         <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
           <span className="text-xs font-semibold uppercase tracking-widest text-[color:var(--brand-lime)]">Our Pricing Plans</span>
-          <h1 className="mt-3 font-display text-5xl font-extrabold sm:text-6xl">Looking for a car wash? Choose a plan.</h1>
-          <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80">Transparent one-time pricing for sedans and SUVs. Monthly and yearly packages available — get 30% off on 1-year contracts.</p>
+          <h1 className="mt-3 font-display text-5xl font-extrabold sm:text-6xl">Professional Mobile Car Wash Packages</h1>
+          <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80">Choose the mobile car wash package that best suits your vehicle. Our Silver and Gold packages are designed to provide professional exterior and interior cleaning with transparent pricing and premium service.</p>
         </div>
       </section>
 
@@ -109,15 +113,89 @@ function Packages() {
         </div>
 
         <div className="mt-16 rounded-3xl border border-border bg-muted/40 p-8 text-center">
-          <h3 className="font-display text-2xl font-bold">Need monthly or yearly service?</h3>
+          <h3 className="font-display text-2xl font-bold">Looking for Regular Car Wash Services?</h3>
           <p className="mx-auto mt-3 max-w-2xl text-muted-foreground">
-            We offer contract packages for villas, offices and residential communities. Get up to 30% off on a 1-year contract.
+            We provide flexible monthly and yearly mobile car wash contracts for residential buildings, villas, offices, hotels and commercial fleet operators across the UAE. Contact us for a customised quotation.
           </p>
           <Link to="/contact" className="mt-6 inline-flex items-center gap-2 rounded-full bg-gradient-brand px-6 py-3 text-sm font-semibold text-white shadow-brand">
             Talk to us
           </Link>
         </div>
       </section>
+      <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
+  <h2 className="font-display text-4xl font-bold">
+    What's Included in Every Package
+  </h2>
+
+  <p className="mt-6 text-muted-foreground">
+    Every mobile car wash package is completed by trained professionals using premium cleaning products and modern equipment. We focus on delivering a spotless finish while protecting your vehicle inside and out.
+  </p>
+
+  <div className="mt-10 grid gap-6 md:grid-cols-2">
+    <div className="rounded-2xl border p-6">
+      <h3 className="text-xl font-semibold">
+        Exterior Cleaning
+      </h3>
+
+      <p className="mt-3 text-muted-foreground">
+        Pressure washing, foam wash, wheel cleaning, tyre dressing and window cleaning help restore your vehicle's exterior appearance.
+      </p>
+    </div>
+
+    <div className="rounded-2xl border p-6">
+      <h3 className="text-xl font-semibold">
+        Interior Cleaning
+      </h3>
+
+      <p className="mt-3 text-muted-foreground">
+        Interior vacuuming, dashboard cleaning, panel polishing and interior glass cleaning provide a fresh and comfortable cabin.
+      </p>
+    </div>
+  </div>
+</section>
+      <section className="bg-muted/40 py-20">
+  <div className="mx-auto max-w-5xl px-4">
+
+    <h2 className="font-display text-4xl font-bold text-center">
+      Frequently Asked Questions
+    </h2>
+
+    <div className="mt-12 space-y-8">
+
+      <div>
+        <h3 className="text-xl font-semibold">
+          Which package should I choose?
+        </h3>
+
+        <p className="mt-2 text-muted-foreground">
+          Silver is ideal for regular maintenance, while Gold includes additional premium services for a more comprehensive clean.
+        </p>
+      </div>
+
+      <div>
+        <h3 className="text-xl font-semibold">
+          Are the prices fixed?
+        </h3>
+
+        <p className="mt-2 text-muted-foreground">
+          Yes, our listed prices apply to one-time services. Custom quotations are available for monthly, yearly and fleet contracts.
+        </p>
+      </div>
+
+      <div>
+        <h3 className="text-xl font-semibold">
+          Can I book online?
+        </h3>
+
+        <p className="mt-2 text-muted-foreground">
+          Yes. Simply visit our booking page and choose the package that best fits your needs.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
     </>
   );
 }
