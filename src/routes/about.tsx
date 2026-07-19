@@ -129,6 +129,185 @@ function About() {
         </div>
       </section>
       {/* NEW SECTION END */}
+      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+  <div className="max-w-4xl">
+    <h2 className="font-display text-4xl font-bold">
+      Our Mission
+    </h2>
+
+    <p className="mt-6 text-muted-foreground">
+      At MAC Mobile Car Wash Services, our mission is to make professional car care simple, convenient and reliable for every customer. We believe every vehicle deserves expert care without requiring customers to travel or wait in long queues.
+    </p>
+
+    <p className="mt-4 text-muted-foreground">
+      Our experienced team provides professional mobile car washing and detailing using premium cleaning products, modern equipment and eco-friendly methods that help protect your vehicle while delivering exceptional results.
+    </p>
+
+    <p className="mt-4 text-muted-foreground">
+      Whether you need a one-time wash or regular vehicle maintenance, we are committed to delivering consistent quality, outstanding customer service and a hassle-free experience every time.
+    </p>
+  </div>
+</section>
+      <section className="bg-muted/40 py-20">
+  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div className="max-w-4xl">
+      <h2 className="font-display text-4xl font-bold">
+        How We Work
+      </h2>
+
+      <p className="mt-6 text-muted-foreground">
+        Our process is designed to make car care simple, convenient and stress-free. Customers can schedule a wash online or contact our team directly, and our trained professionals arrive at the chosen location with everything needed to complete the service.
+      </p>
+
+      <div className="mt-10 grid gap-6 md:grid-cols-4">
+
+        <div className="rounded-2xl border p-6">
+          <h3 className="text-lg font-semibold">1. Book</h3>
+          <p className="mt-3 text-sm text-muted-foreground">
+            Choose your preferred package and schedule a convenient time.
+          </p>
+        </div>
+
+        <div className="rounded-2xl border p-6">
+          <h3 className="text-lg font-semibold">2. We Arrive</h3>
+          <p className="mt-3 text-sm text-muted-foreground">
+            Our team arrives at your location fully equipped with professional cleaning products.
+          </p>
+        </div>
+
+        <div className="rounded-2xl border p-6">
+          <h3 className="text-lg font-semibold">3. Professional Cleaning</h3>
+          <p className="mt-3 text-sm text-muted-foreground">
+            We carefully clean, wash and detail your vehicle using premium products and modern techniques.
+          </p>
+        </div>
+
+        <div className="rounded-2xl border p-6">
+          <h3 className="text-lg font-semibold">4. Drive Away Happy</h3>
+          <p className="mt-3 text-sm text-muted-foreground">
+            Enjoy a clean, refreshed vehicle without leaving your home or workplace.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+  <div className="max-w-5xl">
+    <h2 className="font-display text-4xl font-bold">
+      Who We Serve
+    </h2>
+
+    <p className="mt-6 text-muted-foreground">
+      MAC Mobile Car Wash Services proudly provides professional mobile car washing and detailing for a wide range of customers across the United Arab Emirates. Whether you own a single vehicle or manage an entire fleet, our team delivers reliable and convenient vehicle care directly to your location.
+    </p>
+
+    <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+      <div className="rounded-2xl border p-6">
+        <h3 className="text-xl font-semibold">🏡 Homes & Villas</h3>
+        <p className="mt-3 text-sm text-muted-foreground">
+          Convenient mobile car washing without leaving your home.
+        </p>
+      </div>
+
+      <div className="rounded-2xl border p-6">
+        <h3 className="text-xl font-semibold">🏢 Residential Buildings</h3>
+        <p className="mt-3 text-sm text-muted-foreground">
+          Professional vehicle cleaning for apartments and residential communities.
+        </p>
+      </div>
+
+      <div className="rounded-2xl border p-6">
+        <h3 className="text-xl font-semibold">🏨 Hotels</h3>
+        <p className="mt-3 text-sm text-muted-foreground">
+          Reliable mobile car washing for hotel guests and staff parking areas.
+        </p>
+      </div>
+
+      <div className="rounded-2xl border p-6">
+        <h3 className="text-xl font-semibold">🏢 Offices</h3>
+        <p className="mt-3 text-sm text-muted-foreground">
+          Vehicle cleaning while employees continue their workday.
+        </p>
+      </div>
+
+      <div className="rounded-2xl border p-6">
+        <h3 className="text-xl font-semibold">🚗 Fleet Vehicles</h3>
+        <p className="mt-3 text-sm text-muted-foreground">
+          Scheduled washing and detailing for company and commercial fleets.
+        </p>
+      </div>
+
+      <div className="rounded-2xl border p-6">
+        <h3 className="text-xl font-semibold">🚙 Individual Customers</h3>
+        <p className="mt-3 text-sm text-muted-foreground">
+          One-time and recurring car wash services for personal vehicles.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+      <section className="bg-muted/40 py-20">
+  <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+
+    <h2 className="font-display text-4xl font-bold text-center">
+      Frequently Asked Questions
+    </h2>
+
+    <div className="mt-12 space-y-8">
+
+      <div>
+        <h3 className="text-xl font-semibold">
+          Do you provide mobile car wash services at home?
+        </h3>
+        <p className="mt-2 text-muted-foreground">
+          Yes. Our team comes directly to your home, apartment, villa or workplace with everything needed to professionally clean your vehicle.
+        </p>
+      </div>
+
+      <div>
+        <h3 className="text-xl font-semibold">
+          Do I need to provide water or electricity?
+        </h3>
+        <p className="mt-2 text-muted-foreground">
+          No. Our mobile car wash team arrives fully equipped with professional tools and premium cleaning products required to complete the service.
+        </p>
+      </div>
+
+      <div>
+        <h3 className="text-xl font-semibold">
+          What vehicles do you clean?
+        </h3>
+        <p className="mt-2 text-muted-foreground">
+          We clean sedans, SUVs, luxury vehicles, sports cars, commercial vehicles and company fleets.
+        </p>
+      </div>
+
+      <div>
+        <h3 className="text-xl font-semibold">
+          Do you offer regular car wash plans?
+        </h3>
+        <p className="mt-2 text-muted-foreground">
+          Yes. We offer one-time services as well as regular scheduled car washing for individuals, residential communities and businesses.
+        </p>
+      </div>
+
+      <div>
+        <h3 className="text-xl font-semibold">
+          Which areas do you serve?
+        </h3>
+        <p className="mt-2 text-muted-foreground">
+          We provide professional mobile car wash and detailing services across the United Arab Emirates.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
     </>
   );
 }
