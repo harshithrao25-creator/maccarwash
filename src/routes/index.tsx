@@ -39,15 +39,16 @@ function Home() {
             <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-[color:var(--brand-lime)] backdrop-blur">
               <Sparkles className="h-3.5 w-3.5" /> Dubai · UAE
             </span>
-            <h1 className="mt-6 font-display text-5xl font-extrabold leading-[1.05] sm:text-6xl lg:text-7xl">
-              The shine of a showroom.{" "}
-              <span className="text-gradient-brand" style={{ backgroundImage: "linear-gradient(135deg, #ff6b7a 0%, #a5cd39 100%)" }}>
-                At your doorstep.
-              </span>
-            </h1>
+<h1 className="mt-6 font-display text-5xl font-extrabold leading-[1.05] sm:text-6xl lg:text-7xl">
+  Professional Mobile Car Wash & Car Detailing Services
+</h1>
+
+<p className="mt-4 text-2xl font-semibold text-gradient-brand">
+  The shine of a showroom. At your doorstep.
+</p>
             <p className="mt-6 max-w-xl text-lg text-white/80">
-              MAC Mobile Car Wash brings 10+ years of professional mobile car washing, detailing and cleaning to villas, communities and corporate parking across the UAE.
-            </p>
+  MAC Mobile Car Wash provides professional mobile car wash, car detailing, interior cleaning, exterior washing and fleet vehicle cleaning. We bring premium car care directly to your home, office, villa or business.
+</p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link to="/booking" className="inline-flex items-center gap-2 rounded-full bg-gradient-brand px-7 py-3.5 text-sm font-semibold text-white shadow-brand transition hover:opacity-90">
                 Book Now <ArrowRight className="h-4 w-4" />
